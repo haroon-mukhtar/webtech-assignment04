@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eeeeee;
+}
+
+#topbar {
+  background: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#topbar h2 {
+  margin: 0;
+}
+
+button {
+  padding: 6px 14px;
+  margin: 2px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+#msg {
+  margin-left: 10px;
+  color: #90ee90;
+}
+
+#main {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+#editorBox, #previewBox {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+#editor {
+  flex: 1;
+  font-family: monospace;
+  font-size: 15px;
+  padding: 10px;
+  resize: none;
+}
+
+#slide {
+  flex: 1;
+  background: white;
+  border: 1px solid #999;
+  padding: 30px;
+  overflow: auto;
+}
+
+#slide h1 { margin-top: 0; }
+
+#slide pre {
+  background: #eee;
+  padding: 10px;
+}
+
+#controls {
+  text-align: center;
+  padding: 8px;
+}
+
+#count {
+  margin: 0 15px;
+}
+
+/* when the preview box is in full screen (presentation mode) */
+#previewBox:fullscreen {
+  background: white;
+  padding: 20px;
+}
+
+#previewBox:fullscreen #slide {
+  border: none;
+  font-size: 28px;
+  padding: 60px;
+}
+
+#previewBox:fullscreen .label {
+  display: none;
+}

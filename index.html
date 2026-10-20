@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Slides</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="topbar">
+    <h2>Markdown Slides</h2>
+    <div>
+      <button id="newBtn">New</button>
+      <button id="saveBtn">Save</button>
+      <button id="presentBtn">Present</button>
+      <span id="msg"></span>
+    </div>
+  </div>
+
+  <div id="main">
+    <!-- left side:code -->
+    <div id="editorBox">
+      <p class="label">Markdown (use --- to split slides)</p>
+      <textarea id="editor"></textarea>
+    </div>
+
+    <!-- right side:slides -->
+    <div id="previewBox">
+      <p class="label" id="previewLabel">Preview</p>
+      <div id="slide"></div>
+      <div id="controls">
+        <button id="leftBtn">Left</button>
+        <span id="count">1 / 1</span>
+        <button id="rightBtn">Right</button>
+        <button id="fullBtn">Full Screen</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
